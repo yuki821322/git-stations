@@ -1,0 +1,21 @@
+{
+  "name": "git-stations",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/TechBowl-japan/git-stations.git",
+  "author": "Àżu <yamane_kota@techbowl.co.jp>",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write {scripts,tests}/**/*.js",
+    "lint": "eslint {scripts,tests}/**/*.js --fix",
+    "fix": "yarn format && yarn lint"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "eslint": "9.x",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.3.0",
+    "prettier": "^3.3.1"
+  }
+}

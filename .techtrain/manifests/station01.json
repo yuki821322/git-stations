@@ -1,0 +1,12 @@
+{
+  "name": "Station 01",
+  "id": 1,
+  "prepare": [],
+  "tests": [
+    {
+      "type": "junit-compat",
+      "command": "npx",
+      "args": []
+    }
+  ]
+}
