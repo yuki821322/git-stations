@@ -8,7 +8,7 @@
   "scripts": {
     "format": "prettier --write {scripts,tests}/**/*.ts",
     "lint": "eslint {scripts,tests}/**/*.ts --fix",
-    "fix": "yarn format && yarn lint",
+    "fix": "pnpm run format && pnpm run lint",
     "test": "vitest run"
   },
   "dependencies": {
