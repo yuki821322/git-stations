@@ -1,6 +1,8 @@
 .DS_Store
 .idea/
 .techtrain/config.toml
+git-log.txt
+git-diff.txt
 
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
