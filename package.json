@@ -9,11 +9,13 @@
     "format": "prettier --write {scripts,tests}/**/*.ts",
     "lint": "eslint {scripts,tests}/**/*.ts --fix",
     "fix": "pnpm run format && pnpm run lint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "station06": "ts-node ./scripts/station06.ts"
   },
   "dependencies": {
     "@types/node": "^20.14.8",
     "simple-git": "^3.25.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
@@ -24,5 +26,6 @@
     "prettier": "^3.3.1",
     "typescript-eslint": "^7.13.0",
     "vitest": "^1.6.0"
-  }
+  },
+  "packageManager": "pnpm@8.15.3+sha512.dd85cd6eca6417c6f73db32ba1eb4767ffb4cba4f5bf0727846722c92b6b9e56a2cc218b11385bbc2b21f18a16a67da77aceae9b61a0f56a1643b25e1fb6a605"
 }
