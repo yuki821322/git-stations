@@ -1,5 +1,5 @@
-import simpleGit from 'simple-git';
-import * as fs from 'node:fs';
+import simpleGit from 'simple-git'
+import * as fs from 'node:fs'
 
 async function main() {
   const headerStyle = `  
