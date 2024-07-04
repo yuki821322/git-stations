@@ -11,7 +11,8 @@
     "fix": "pnpm run format && pnpm run lint",
     "test": "vitest run",
     "station06": "ts-node ./scripts/station06.ts",
-    "station07": "ts-node ./scripts/station07.ts"
+    "station07": "ts-node ./scripts/station07.ts",
+    "station09": "ts-node ./scripts/station09.ts"
   },
   "dependencies": {
     "@types/node": "^20.14.8",
