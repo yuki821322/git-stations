@@ -1,9 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-    <head>
-        <title>GitRailway</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cafe Railway</title>
+</head>
+<body>
+<header>
+    <h1>Cafe Railway</h1>
+    <nav id="header-menu">
+        <ul>
+            <li><a href="#top">Top</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#access">Access</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="top">
+        <p>
+            <img id="top-page-img" src="./assets/top.jpg" alt="Cafe Railway" />
+        </p>
+    </section>
+    <section id="menu">
+        <h2>Menu</h2>
+        <section id="drink">
+            <h3>Drinks</h3>
+            <div id="drink-list" class="item-list">
+                <table>
+                    <tr>
+                        <td class="item-name">ホットコーヒー</td>
+                        <td class="item-price">300円</td>
+                    </tr>
+                    <tr>
+                        <td class="item-name">アイスコーヒー</td>
+                        <td class="item-price">300円</td>
+                    </tr>
+                    <tr>
+                        <td class="item-name">カフェラテ</td>
+                        <td class="item-price">400円</td>
+                    </tr>
+                    <tr>
+                        <td class="item-name">アップルジュース</td>
+                        <td class="item-price">350円</td>
+                    </tr>
+                    <tr>
+                        <td class="item-name">オレンジジュース</td>
+                        <td class="item-price">350円</td>
+                    </tr>
+                    <tr>
+                        <td class="item-name">ホットティー</td>
+                        <td class="item-price">350円</td>
+                    </tr>
+                    <tr>
+                        <td class="item-name">アイスティー</td>
+                        <td class="item-price">350円</td>
+                    </tr>
+                </table>
+                <p id="drink-image" class="item-image">
+                    <img src="./assets/drink.jpg" alt="飲み物" />
+                </p>
+            </div>
+        </section>
+        <section id="food">
+            <h3>Foods</h3>
+            <div id="food-list" class="item-list">
+                <p id="food-image" class="item-image">
+                    <img src="./assets/food.jpg" alt="食べ物" />
+                </p>
+                <table>
+                    <tr>
+                        <td class="item-name">チーズケーキ</td>
+                        <td class="item-price">500円</td>
+                    </tr>
+                    <tr>
+                        <td class="item-name">パンケーキ</td>
+                        <td class="item-price">700円</td>
+                    </tr>
+                    <tr>
+                        <td class="item-name">ナポリタン</td>
+                        <td class="item-price">780円</td>
+                    </tr>
+                    <tr>
+                        <td class="item-name">サンドイッチ</td>
+                        <td class="item-price">500円</td>
+                    </tr>
+                    <tr>
+                        <td class="item-name">ホットドック</td>
+                        <td class="item-price">470円</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </section>
+    <section id="access">
+        <h2>Access</h2>
+        <p>〇〇駅から徒歩10分</p>
+        <section id="access-detail">
+            <table>
+                <tr>
+                    <th>住所</th>
+                    <td>xxx県xxx市〇〇</td>
+                </tr>
+                <tr>
+                    <th>営業時間</th>
+                    <td>7:00~22:00</td>
+                </tr>
+            </table>
+            <p><img src="./assets/cafe.jpg" alt="カフェ外観"></p>
+        </section>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label>
+                <input id="email" type="email" placeholder="example@example.com" />
+            </label>
+            <br />
+            <label>
+                <textarea id="contact-detail" placeholder="お問い合わせ内容を入力ください"></textarea>
+            </label>
+            <br />
+            <button type="submit">送信</button>
+        </form>
+    </section>
+</main>
+</body>
 </html>
