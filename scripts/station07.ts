@@ -14,8 +14,7 @@ async function main() {
   margin-bottom: 50px;
 }
 
-#drink,
-#food {
+#drink {
   width: 100%;
   margin-bottom: 150px;
 }
@@ -53,6 +52,10 @@ async function main() {
 }
 `
   const menuFoodStyle = `
+#food {
+  width: 100%;
+}
+
 #food > h3 {
   width: 50vw;
   margin: 0 5vw 25px auto;
