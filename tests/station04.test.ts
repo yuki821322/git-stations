@@ -11,8 +11,8 @@ describe('Station04', () => {
     expect(result).toBeTruthy()
   })
 
-  it('feature/accessブランチが存在する', async () => {
-    const expectedBranch = 'feature/access'
+  it('feature/contact-styleブランチがローカルに存在する', async () => {
+    const expectedBranch = 'feature/contact-style'
     const git = simpleGit()
     const branches = (await git.branch().branchLocal()).all
     const result = branches.some((branch) => branch === expectedBranch)

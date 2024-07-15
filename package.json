@@ -10,6 +10,7 @@
     "lint": "eslint {scripts,tests}/**/*.ts --fix",
     "fix": "pnpm run format && pnpm run lint",
     "test": "vitest run",
+    "station04": "ts-node ./scripts/station04.ts",
     "station06": "ts-node ./scripts/station06.ts",
     "station07": "ts-node ./scripts/station07.ts",
     "station09": "ts-node ./scripts/station09.ts"
