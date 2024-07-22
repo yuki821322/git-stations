@@ -101,7 +101,9 @@ async function main() {
   await git.merge([featureDrinkStyleBranch])
 
   await git.checkout(mainBranch)
-  await git.merge([featureFoodStyleBranch])
+  await git.merge([featureFoodStyleBranch]).catch(() => {
+    console.log('コンフリクトが発生しました。')
+  })
 }
 
 main()
