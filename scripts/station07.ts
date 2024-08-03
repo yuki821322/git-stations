@@ -81,26 +81,29 @@ async function main() {
 `
   const styleSheetPath = './pages/style.css'
   const mainBranch = 'main'
+  const featureMenuStyleBranch = 'feature/menu-style'
   const featureDrinkStyleBranch = 'feature/drink-style'
   const featureFoodStyleBranch = 'feature/food-style'
   const git = simpleGit()
 
-  await git.checkoutBranch(featureDrinkStyleBranch, mainBranch)
+  await git.checkoutBranch(featureMenuStyleBranch, mainBranch)
+
+  await git.checkoutBranch(featureDrinkStyleBranch, featureMenuStyleBranch)
   fs.appendFileSync(styleSheetPath, menuDrinkStyle)
 
   await git.add([styleSheetPath])
   await git.commit('feat: 飲み物メニューのスタイルを実装')
 
-  await git.checkoutBranch(featureFoodStyleBranch, mainBranch)
+  await git.checkoutBranch(featureFoodStyleBranch, featureMenuStyleBranch)
   fs.appendFileSync(styleSheetPath, menuFoodStyle)
 
   await git.add([styleSheetPath])
   await git.commit('feat: 食べ物メニューのスタイルを実装')
 
-  await git.checkout(mainBranch)
+  await git.checkout(featureMenuStyleBranch)
   await git.merge([featureDrinkStyleBranch])
 
-  await git.checkout(mainBranch)
+  await git.checkout(featureMenuStyleBranch)
   await git.merge([featureFoodStyleBranch]).catch(() => {
     console.log('コンフリクトが発生しました。')
   })
