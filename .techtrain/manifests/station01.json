@@ -6,7 +6,12 @@
     {
       "type": "junit-compat",
       "command": "npx",
-      "args": []
+      "args": [
+        "vitest",
+        "--reporter=junit",
+        "--watch=false",
+        "./tests/station01.test.ts"
+      ]
     }
   ]
 }
