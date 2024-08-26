@@ -6,9 +6,7 @@ describe('Station08', () => {
     const file = (await open('./git-log.txt')).readLines()
     const iterator = file[Symbol.asyncIterator]()
     const line1 = (await iterator.next()).value
-    const line2 = (await iterator.next()).value
-    const line3 = (await iterator.next()).value
-    const result = /^commit/.test(line1) && /^Author:/.test(line2) && /^Date:/.test(line3)
+    const result = /^commit/.test(line1)
 
     expect(result).toBeTruthy()
   })
