@@ -1,12 +1,12 @@
-# git-stations
+# 環境構築
 
-Railway Git 入門編リポジトリ
+1. Node.js v20.15.0
+2. yarn v1
+3. Visual Studio Code
+4. Railway VSCode 拡張機能
 
-## 環境構築
+上記 4 つをインストールする必要があります。インストールできているかの確認やインストール方法は、
+[Railway 準備編](https://www.notion.so/techbowl/Railway-ceba695d5014460e9733c2a46318cdec) をご確認いただき、挑戦の準備をしましょう。
 
-- Node.js v20.15.0
-- yarn v1
-
-```shell
-yarn
-```
+その他リポジトリの更新の仕方や、トラブルシューティングについても上記の Railway 準備編にございます。
+何かあった際は、まずそちらを確認しましょう。
