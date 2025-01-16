@@ -11,12 +11,15 @@ describe('Station04', () => {
     expect(result).toBeTruthy()
   })
 
-  it('feature/contact-styleブランチがローカルに存在する', async () => {
-    const expectedBranch = 'feature/contact-style'
+  it('feature/contact-styleブランチとコミットがローカルに存在する', async () => {
+    const featureContactStyleBranch = 'feature/contact-style'
     const git = simpleGit()
-    const branches = (await git.branch().branchLocal()).all
-    const result = branches.some((branch) => branch === expectedBranch)
+    const remoteBranches = (await git.branch(['-r'])).branches
+    const remoteBranchCommit = remoteBranches[`origin/${featureContactStyleBranch}`].commit
 
-    expect(result).toBeTruthy()
+    const localBranches = (await git.branch().branchLocal()).branches
+    const localBranchCommit = localBranches[featureContactStyleBranch].commit
+
+    expect(remoteBranchCommit).toEqual(localBranchCommit)
   })
 })
